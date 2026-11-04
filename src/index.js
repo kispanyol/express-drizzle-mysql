@@ -1,9 +1,9 @@
 require("dotenv").config();
 
 const express = require("express");
-const db = require("../db/db");
+const db = require("./db/db");
 
-const { users } = require("../db/schema");
+const { users } = require("./db/schema");
 
 const app = express();
 app.use(express.json());
