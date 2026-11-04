@@ -29,7 +29,7 @@ You can spin up your own backend API in seconds using this repository as a templ
 
 ```bash
 # Create a new repo from this template and clone it locally
-gh repo create my-awesome-api --template YOUR_GITHUB_USERNAME/express-drizzle-mysql --clone
+gh repo create my-awesome-api --template MystioDev/express-drizzle-mysql --clone
 cd my-awesome-api
 ```
 
