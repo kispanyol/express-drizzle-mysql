@@ -1,8 +1,11 @@
-/** @type { import("drizzle-kit").Config } */
-module.exports = {
-  schema: "./db/schema.js",
+require("dotenv").config();
+const { defineConfig } = require("drizzle-kit");
+
+module.exports = defineConfig({
+  schema: "./src/db/schema.js",
+  out: "./drizzle",
   dialect: "mysql",
   dbCredentials: {
-    url: process.env.DATABASE_URL,
+    url: process.env.DATABASE_URL || "",
   },
-};
+});
